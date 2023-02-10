@@ -58,12 +58,12 @@ const routes = [
   },
   {
     path: "/users",
-    name: "사용자 관리",
+    name: "유저 관리",
     component: Users,
   },
   {
     path: "/setting",
-    name: "설정",
+    name: "설정 관리",
     component: Setting,
   },
 ];

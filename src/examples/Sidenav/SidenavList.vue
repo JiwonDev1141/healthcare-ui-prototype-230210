@@ -36,7 +36,7 @@
           :aria-controls="''"
           v-bind:collapse="false"
           collapseRef="users"
-          navText="사용자 관리"
+          navText="유저 관리"
         >
           <template v-slot:icon>
             <i class="material-icons-round opacity-10 fs-5">person</i>
@@ -91,7 +91,7 @@
           :aria-controls="''"
           v-bind:collapse="false"
           collapseRef="setting"
-          navText="설정"
+          navText="설정 관리"
         >
           <template v-slot:icon>
             <i class="material-icons fixed-plugin-button-nav cursor-pointer"> settings </i>
