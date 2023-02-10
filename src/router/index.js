@@ -7,6 +7,7 @@ import Notifications from "../views/Notifications.vue";
 import Profile from "../views/Profile.vue";
 import SignIn from "../views/SignIn.vue";
 import SignUp from "../views/SignUp.vue";
+import Users from "../views/Users.vue";
 
 const routes = [
   {
@@ -53,6 +54,11 @@ const routes = [
     path: "/sign-up",
     name: "SignUp",
     component: SignUp,
+  },
+  {
+    path: "/users",
+    name: "Users",
+    component: Users,
   },
 ];
 
