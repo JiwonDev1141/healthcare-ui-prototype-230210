@@ -10,7 +10,7 @@
           :aria-controls="''"
           v-bind:collapse="false"
           collapseRef="dashboard"
-          navText="Dashboard"
+          navText="대시 보드"
         >
           <template v-slot:icon>
             <i class="material-icons-round opacity-10 fs-5">dashboard</i>
@@ -22,11 +22,11 @@
           url="#"
           :aria-controls="''"
           v-bind:collapse="false"
-          collapseRef="tables"
-          navText="Tables"
+          collapseRef="billing"
+          navText="테넌트 관리"
         >
           <template v-slot:icon>
-            <i class="material-icons-round opacity-10 fs-5">table_view</i>
+            <i class="material-icons-round opacity-10 fs-5">receipt_long</i>
           </template>
         </sidenav-collapse>
       </li>
@@ -35,15 +35,29 @@
           url="#"
           :aria-controls="''"
           v-bind:collapse="false"
-          collapseRef="billing"
-          navText="Billing"
+          collapseRef="users"
+          navText="사용자 관리"
         >
           <template v-slot:icon>
-            <i class="material-icons-round opacity-10 fs-5">receipt_long</i>
+            <i class="material-icons-round opacity-10 fs-5">person</i>
           </template>
         </sidenav-collapse>
       </li>
       <li class="nav-item">
+        <sidenav-collapse
+          url="#"
+          :aria-controls="''"
+          v-bind:collapse="false"
+          collapseRef="tables"
+          navText="디바이스 관리"
+        >
+          <template v-slot:icon>
+            <i class="material-icons-round opacity-10 fs-5">table_view</i>
+          </template>
+        </sidenav-collapse>
+      </li>
+
+      <!-- <li class="nav-item">
         <sidenav-collapse
           url="#"
           :aria-controls="''"
@@ -57,20 +71,21 @@
             >
           </template>
         </sidenav-collapse>
-      </li>
+      </li> -->
       <li class="nav-item">
         <sidenav-collapse
           url="#"
           :aria-controls="''"
           v-bind:collapse="false"
           collapseRef="notifications"
-          navText="Notifications"
+          navText="이벤트 관리"
         >
           <template v-slot:icon>
             <i class="material-icons-round opacity-10 fs-5">notifications</i>
           </template>
         </sidenav-collapse>
       </li>
+
       <li class="mt-3 nav-item">
         <h6
           class="text-xs ps-4 text-uppercase font-weight-bolder text-white"
@@ -85,7 +100,7 @@
           :aria-controls="''"
           v-bind:collapse="false"
           collapseRef="profile"
-          navText="Profile"
+          navText="프로필"
         >
           <template v-slot:icon>
             <i class="material-icons-round opacity-10 fs-5">person</i>
@@ -98,7 +113,7 @@
           :aria-controls="''"
           v-bind:collapse="false"
           collapseRef="sign-in"
-          navText="SignIn"
+          navText="로그인"
         >
           <template v-slot:icon>
             <i class="material-icons-round opacity-10 fs-5">login</i>
@@ -111,7 +126,7 @@
           :aria-controls="''"
           v-bind:collapse="false"
           collapseRef="sign-up"
-          navText="SignUp"
+          navText="회원가입"
         >
           <template v-slot:icon>
             <i class="material-icons-round opacity-10 fs-5">assignment</i>
@@ -121,11 +136,11 @@
     </ul>
     <div class="sidenav-footer position-absolute w-100 bottom-0">
       <div class="mx-3">
-        <a
+        <!-- <a
           class="btn mt-4 w-100"
           :class="`bg-gradient-${this.$store.state.color}`"
           href="https://www.creative-tim.com/product/vue-material-dashboard-2-pro"
-          >Upgrade to pro</a
+          >Upgrade to pro</a -->
         >
       </div>
     </div>

@@ -7,7 +7,7 @@
             <div
               class="bg-gradient-success shadow-success border-radius-lg pt-4 pb-3"
             >
-              <h6 class="text-white text-capitalize ps-3">Authors table</h6>
+              <h6 class="text-white text-capitalize ps-3">디바이스 목록</h6>
             </div>
           </div>
           <div class="card-body px-0 pb-2">
@@ -18,22 +18,67 @@
                     <th
                       class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
                     >
-                      Author
+                      식별번호
                     </th>
                     <th
                       class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"
                     >
-                      Function
+                      전화번호
                     </th>
                     <th
                       class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
                     >
-                      Status
+                      유형
                     </th>
                     <th
                       class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
                     >
-                      Employed
+                      기업ID
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      기업 코드
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      기업명
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      서비스 코드
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      서비스명
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      사용자 ID
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      사용자 이름
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      생성일
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      수정일
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      상태
                     </th>
                     <th class="text-secondary opacity-7"></th>
                   </tr>
@@ -50,36 +95,69 @@
                           />
                         </div>
                         <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">John Michael</h6>
-                          <p class="text-xs text-secondary mb-0">
+                          <h6 class="mb-0 text-sm">c3163f072f50745a</h6>
+                          <!-- <p class="text-xs text-secondary mb-0">
                             john@creative-tim.com
-                          </p>
+                          </p> -->
                         </div>
                       </div>
                     </td>
                     <td>
-                      <p class="text-xs font-weight-bold mb-0">Manager</p>
-                      <p class="text-xs text-secondary mb-0">Organization</p>
+                      <p class="text-xs font-weight-bold mb-0">010-1111-8765</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
                     </td>
                     <td class="align-middle text-center text-sm">
                       <span class="badge badge-sm bg-gradient-success"
-                        >Online</span
+                        >Watch</span
                       >
                     </td>
                     <td class="align-middle text-center">
                       <span class="text-secondary text-xs font-weight-bold"
-                        >23/04/18</span
+                        ></span
                       >
                     </td>
                     <td class="align-middle">
-                      <a
-                        href="javascript:;"
+                      <span
+                     
                         class="text-secondary font-weight-bold text-xs"
                         data-toggle="tooltip"
                         data-original-title="Edit user"
                       >
-                        Edit
-                      </a>
+                      CO-00001
+                    </span>
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">HDM Tech, RW</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td class="align-middle">
+                      <p class="text-xs font-weight-bold mb-0">JD</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">제주 해녀 건강</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">010-1111-8765</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">홍길동</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">2022-02-19</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">2/19/2022</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                      <span class="badge badge-sm bg-gradient-success"
+                        >사용중</span
+                      >
                     </td>
                   </tr>
                   <tr>
@@ -93,7 +171,7 @@
                           />
                         </div>
                         <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Alexa Liras</h6>
+                          <h6 class="mb-0 text-sm"></h6>
                           <p class="text-xs text-secondary mb-0">
                             alexa@creative-tim.com
                           </p>
@@ -125,7 +203,7 @@
                       </a>
                     </td>
                   </tr>
-                  <tr>
+                  <!-- <tr>
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
@@ -296,7 +374,7 @@
                         Edit
                       </a>
                     </td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
             </div>
@@ -304,7 +382,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-12">
         <div class="card my-4">
           <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
@@ -665,7 +743,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

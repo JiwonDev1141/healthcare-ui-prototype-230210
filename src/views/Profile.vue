@@ -33,7 +33,7 @@
               class="p-1 bg-transparent nav nav-pills nav-fill"
               role="tablist"
             >
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a
                   class="px-0 py-1 mb-0 nav-link active"
                   data-bs-toggle="tab"
@@ -84,8 +84,8 @@
                   </svg>
                   <span class="ms-1">App</span>
                 </a>
-              </li>
-              <li class="nav-item">
+              </li> -->
+              <!-- <li class="nav-item">
                 <a
                   class="px-0 py-1 mb-0 nav-link"
                   data-bs-toggle="tab"
@@ -132,7 +132,7 @@
                   </svg>
                   <span class="ms-1">Messages</span>
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a
                   class="px-0 py-1 mb-0 nav-link"
@@ -192,7 +192,7 @@
       </div>
       <div class="row">
         <div class="mt-3 row">
-          <div class="col-12 col-md-6 col-xl-4 position-relative">
+          <!-- <div class="col-12 col-md-6 col-xl-4 position-relative">
             <div class="card card-plain h-100">
               <div class="p-3 pb-0 card-header">
                 <h6 class="mb-0">Platform Settings</h6>
@@ -271,7 +271,7 @@
               </div>
             </div>
             <hr class="vertical dark" />
-          </div>
+          </div> -->
           <div class="col-12 col-md-6 col-xl-4 mt-md-0 mt-4 position-relative">
             <profile-info-card
               title="Profile Information"
@@ -303,7 +303,7 @@
             />
             <hr class="vertical dark" />
           </div>
-          <div class="mt-4 col-12 col-xl-4 mt-xl-0">
+          <!-- <div class="mt-4 col-12 col-xl-4 mt-xl-0">
             <div class="card card-plain h-100">
               <div class="p-3 pb-0 card-header">
                 <h6 class="mb-0">Conversations</h6>
@@ -423,8 +423,58 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
+              <!-- <div class="col-lg-4 col-md-6">
+        <timeline-list
+          class="h-100"
+          title="Orders overview"
+          description="<i class='fa fa-arrow-up text-success' aria-hidden='true'></i>
+        <span class='font-weight-bold'>24%</span> this month"
+        >
+          <timeline-item
+            :icon="{
+              component: 'notifications',
+              class: 'text-success',
+            }"
+            title="$2400 Design changes"
+            date-time="22 DEC 7:20 PM"
+          />
+          <TimelineItem
+            :icon="{
+              component: 'code',
+              class: 'text-danger',
+            }"
+            title="New order #1832412"
+            date-time="21 DEC 11 PM"
+          />
+          <TimelineItem
+            :icon="{
+              component: 'shopping_cart',
+              class: 'text-info',
+            }"
+            title="Server payments for April"
+            date-time="21 DEC 9:34 PM"
+          />
+          <TimelineItem
+            :icon="{
+              component: 'credit_card',
+              class: 'text-warning',
+            }"
+            title="New card added for order #4395133"
+            date-time="20 DEC 2:20 AM"
+          />
+          <TimelineItem
+            :icon="{
+              component: 'vpn_key',
+              class: 'text-primary',
+            }"
+            title="Unlock packages for development"
+            date-time="18 DEC 4:54 AM"
+            class="pb-1"
+          />
+        </timeline-list>
+      </div> -->
         <div class="row mt-4">
           <div class="col-12">
             <div class="mb-5 ps-3">
@@ -560,9 +610,9 @@
 
 <script>
 import ProfileInfoCard from "./components/ProfileInfoCard.vue";
-import DefaultProjectCard from "./components/DefaultProjectCard.vue";
-import MaterialSwitch from "@/components/MaterialSwitch.vue";
-import MaterialAvatar from "@/components/MaterialAvatar.vue";
+// import DefaultProjectCard from "./components/DefaultProjectCard.vue";
+// import MaterialSwitch from "@/components/MaterialSwitch.vue";
+// import MaterialAvatar from "@/components/MaterialAvatar.vue";
 import sophie from "@/assets/img/kal-visuals-square.jpg";
 import marie from "@/assets/img/marie.jpg";
 import ivana from "@/assets/img/ivana-square.jpg";
@@ -600,9 +650,9 @@ export default {
   },
   components: {
     ProfileInfoCard,
-    DefaultProjectCard,
-    MaterialSwitch,
-    MaterialAvatar,
+    // DefaultProjectCard,
+    // MaterialSwitch,
+    // MaterialAvatar,
   },
 
   mounted() {

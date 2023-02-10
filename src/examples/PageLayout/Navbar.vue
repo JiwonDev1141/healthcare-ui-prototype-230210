@@ -11,7 +11,7 @@
         v-bind="$attrs"
         :class="isBlur ? 'text-dark' : 'text-white'"
       >
-        Material Dashboard 2
+        메타 헬스케어
       </router-link>
       <button
         class="navbar-toggler shadow-none ms-2"
@@ -41,7 +41,7 @@
                 aria-hidden="true"
                 :class="isBlur ? 'text-dark' : 'text-white'"
               ></i>
-              Dashboard
+              대시보드
             </router-link>
           </li>
           <li class="nav-item">
@@ -51,7 +51,7 @@
                 aria-hidden="true"
                 :class="isBlur ? 'text-dark' : 'text-white'"
               ></i>
-              Profile
+              프로필
             </router-link>
           </li>
           <li class="nav-item">
@@ -61,7 +61,7 @@
                 aria-hidden="true"
                 :class="isBlur ? 'text-dark' : 'text-white'"
               ></i>
-              Sign Up
+              회원가입
             </router-link>
           </li>
           <li class="nav-item">
@@ -71,11 +71,11 @@
                 aria-hidden="true"
                 :class="isBlur ? 'text-dark' : 'text-white'"
               ></i>
-              Sign In
+              로그인
             </router-link>
           </li>
         </ul>
-        <ul class="navbar-nav d-lg-block d-none">
+        <!-- <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
             <a
               href="https://www.creative-tim.com/product/vue-material-dashboard-2"
@@ -83,7 +83,7 @@
               >Free download</a
             >
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </nav>

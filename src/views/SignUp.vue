@@ -34,9 +34,9 @@
               >
                 <div class="card card-plain">
                   <div class="pb-0 card-header bg-transparent mb-4">
-                    <h4 class="font-weight-bolder">Sign In</h4>
+                    <h4 class="font-weight-bolder">회원가입</h4>
                     <p class="mb-0">
-                      Enter your email and password to register
+                      가입을 위해 이메일과 패스워드를 입력해주세요.
                     </p>
                   </div>
                   <div class="card-body">
@@ -73,12 +73,13 @@
                         class="font-weight-light"
                         checked
                       >
-                        I agree the
+                      
                         <a
                           href="../../../pages/privacy.html"
                           class="text-dark font-weight-bolder"
-                          >Terms and Conditions</a
+                          >이용 약관</a
                         >
+                        에 동의합니다
                       </material-checkbox>
                       <div class="text-center">
                         <material-button
@@ -87,18 +88,18 @@
                           color="success"
                           fullWidth
                           size="lg"
-                          >Sign Up</material-button
+                          >회원가입</material-button
                         >
                       </div>
                     </form>
                   </div>
                   <div class="px-1 pt-0 text-center card-footer px-lg-2">
                     <p class="mx-auto mb-4 text-sm">
-                      Don't have an account?
+                      계정이 있으신가요?
                       <router-link
                         :to="{ name: 'SignIn' }"
                         class="text-success text-gradient font-weight-bold"
-                        >Sign In</router-link
+                        >로그인</router-link
                       >
                     </p>
                   </div>

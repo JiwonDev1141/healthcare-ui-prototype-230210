@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
-import Tables from "../views/Tables.vue";
-import Billing from "../views/Billing.vue";
+import Devices from "../views/Devices.vue";
+import Tenant from "../views/Tenant.vue";
 import RTL from "../views/Rtl.vue";
 import Notifications from "../views/Notifications.vue";
 import Profile from "../views/Profile.vue";
@@ -16,18 +16,18 @@ const routes = [
   },
   {
     path: "/dashboard",
-    name: "Dashboard",
+    name: "대시보드",
     component: Dashboard,
   },
   {
     path: "/tables",
-    name: "Tables",
-    component: Tables,
+    name: "디바이스 목록",
+    component: Devices,
   },
   {
     path: "/billing",
-    name: "Billing",
-    component: Billing,
+    name: "테넌트",
+    component: Tenant,
   },
   {
     path: "/rtl-page",
@@ -36,7 +36,7 @@ const routes = [
   },
   {
     path: "/notifications",
-    name: "Notifications",
+    name: "이벤트",
     component: Notifications,
   },
   {
