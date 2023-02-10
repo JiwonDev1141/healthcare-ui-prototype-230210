@@ -10,7 +10,7 @@
           :aria-controls="''"
           v-bind:collapse="false"
           collapseRef="dashboard"
-          navText="대시 보드"
+          navText="대시보드"
         >
           <template v-slot:icon>
             <i class="material-icons-round opacity-10 fs-5">dashboard</i>
@@ -85,6 +85,19 @@
           </template>
         </sidenav-collapse>
       </li>
+      <li class="nav-item">
+        <sidenav-collapse
+          url="#"
+          :aria-controls="''"
+          v-bind:collapse="false"
+          collapseRef="setting"
+          navText="설정"
+        >
+          <template v-slot:icon>
+            <i class="material-icons fixed-plugin-button-nav cursor-pointer"> settings </i>
+          </template>
+        </sidenav-collapse>
+      </li>
 
       <li class="mt-3 nav-item">
         <h6
@@ -133,6 +146,7 @@
           </template>
         </sidenav-collapse>
       </li>
+
     </ul>
     <div class="sidenav-footer position-absolute w-100 bottom-0">
       <div class="mx-3">

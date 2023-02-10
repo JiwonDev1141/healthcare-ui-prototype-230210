@@ -8,6 +8,7 @@ import Profile from "../views/Profile.vue";
 import SignIn from "../views/SignIn.vue";
 import SignUp from "../views/SignUp.vue";
 import Users from "../views/Users.vue";
+import Setting from "../views/Setting.vue";
 
 const routes = [
   {
@@ -22,12 +23,12 @@ const routes = [
   },
   {
     path: "/tables",
-    name: "디바이스 목록",
+    name: "디바이스 관리",
     component: Devices,
   },
   {
     path: "/billing",
-    name: "테넌트",
+    name: "테넌트 관리",
     component: Tenant,
   },
   {
@@ -37,12 +38,12 @@ const routes = [
   },
   {
     path: "/notifications",
-    name: "이벤트",
+    name: "이벤트 관리",
     component: Notifications,
   },
   {
     path: "/profile",
-    name: "Profile",
+    name: "프로필",
     component: Profile,
   },
   {
@@ -57,8 +58,13 @@ const routes = [
   },
   {
     path: "/users",
-    name: "Users",
+    name: "사용자 관리",
     component: Users,
+  },
+  {
+    path: "/setting",
+    name: "설정",
+    component: Setting,
   },
 ];
 

@@ -7,7 +7,7 @@
             <div
               class="bg-gradient-success shadow-success border-radius-lg pt-4 pb-3"
             >
-              <h6 class="text-white text-capitalize ps-3">이벤트</h6>
+              <h6 class="text-white text-capitalize ps-3">이벤트 목록</h6>
             </div>
           </div>
           <div class="card-body px-0 pb-2">
