@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4" style="height: 85vh">
         <div class="row">
             <div class="col-12">
                 <div class="card my-4">
@@ -596,7 +596,14 @@
         </div>
       </div>
     </div> -->
-    <UserDetail :show="state.showDetail" :email="state.currentUserId" :username="state.username" />
+        <div 
+            style="
+                position: absolute; top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); z-index: 2;
+            ">
+            <UserDetailPop :show="state.showDetail" :email="state.currentUserId" :username="state.username" />
+        </div>
     </div>
 </template>
 
@@ -610,14 +617,14 @@
 // import TransactionCard from "./components/TransactionCard.vue";
 
 import { reactive } from 'vue';
-import UserDetail from './components/UserDetailPop.vue';
+import UserDetailPop from './components/UserDetailPop.vue';
 
 
 
 export default {
     name: "user",
     components: {
-        UserDetail
+        UserDetailPop
     },
     setup() {
         const state = reactive({
@@ -625,7 +632,8 @@ export default {
             email: false,
             currentUserId: "awesomedev3@rockwonitglobal.com",
             username: "Jiwon",
-            profileImg: "/favicon.png"
+            profileImg: "/favicon.png",
+           
         })
 
         const showDetail = () => {

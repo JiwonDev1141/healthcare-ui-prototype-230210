@@ -4,6 +4,8 @@
     :class="getClasses(variant, color, size, fullWidth, active)"
     
   >
+  
+    {{ text }}
     <slot />
   </button>
 </template>
@@ -32,6 +34,7 @@ export default {
       type: Boolean,
       default: false,
     },
+    text: String
   },
   methods: {
     getClasses: (variant, color, size, fullWidth, active) => {
