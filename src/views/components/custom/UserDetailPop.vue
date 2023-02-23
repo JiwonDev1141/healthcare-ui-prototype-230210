@@ -1,14 +1,15 @@
 <template>
     <div v-show="state.show" ref="userDetailPop" id="userDetailPop"
-    style="width: 400px; height:80vh; overflow-x: hidden; z-index: 0; background-color: rgba(255, 255, 255, 1); box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 10px; border: solid 0px;  padding: 15px;">
-    <div style="margin-bottom: 15px;">
-        <button class="p-0 btn btn-link text-dark fixed-plugin-close-button" style="position: absolute; right: 20px;"><i class="material-icons">clear</i></button>
-        <h5>회원 상세정보</h5>
-    </div>
-    
-    <div @click="toggleEditMode" style="width: 56px; position:absolute; right: 20px; z-index: 2;">
+        style="width: 400px; height:80vh; overflow-x: hidden; z-index: 0; background-color: rgba(255, 255, 255, 1); box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 10px; border: solid 0px;  padding: 15px;">
+        <div style="margin-bottom: 15px;">
+            <button @click="closePop" class="p-0 btn btn-link text-dark fixed-plugin-close-button"
+                style="position: absolute; right: 20px;"><i class="material-icons">clear</i></button>
+            <h5>회원 상세정보</h5>
+        </div>
+
+        <div @click="toggleEditMode" style="width: 56px; position:absolute; right: 20px; z-index: 2;">
             <MaterialButton fullWidth="false" variant="gradient" :text="state.editBtnText" size="sm" color="dark" />
-            
+
         </div>
         <div>
             <!-- 아이디	userId
@@ -68,7 +69,7 @@ SMS 수신 여부	isReceiveSMS
                     </select>
                 </div>
 
-             
+
 
                 <!-- <MaterialPagination size="lg" >
                     <MaterialPaginationItem label="현장 관리자" />
@@ -113,16 +114,17 @@ SMS 수신 여부	isReceiveSMS
 
 import axios from "axios";
 import { reactive } from "vue";
-import MaterialAvatar from "../../components/MaterialAvatar.vue";
-import MaterialInput from "../../components/MaterialInput.vue"
+import MaterialAvatar from "../../../components/MaterialAvatar.vue";
+import MaterialInput from "../../../components/MaterialInput.vue"
 // import MaterialCheckbox from "../../components/MaterialCheckbox.vue"
 // import MaterialRadio from "../../components/MaterialRadio.vue";
-import MaterialSwitch from "../../components/MaterialSwitch.vue";
+import MaterialSwitch from "../../../components/MaterialSwitch.vue";
 // import MaterialPagination from "../../components/MaterialPagination.vue";
 // import MaterialPaginationItem from "../../components/MaterialPaginationItem.vue"
-import MaterialButton from "../../components/MaterialButton.vue";
-import InvoiceCard from "./InvoiceCard.vue";
-import PaymentCard from "./PaymentCard.vue";
+import MaterialButton from "../../../components/MaterialButton.vue";
+import InvoiceCard from "../InvoiceCard.vue";
+import PaymentCard from "../PaymentCard.vue";
+import {watch} from "vue";
 
 // 유저 상세 / 수정 팝업
 export default {
@@ -134,9 +136,11 @@ export default {
         userId: String,
         profileImg: String
     },
-    setup() {
+    setup(props) {
+
+
         const state = reactive({
-            show: true,
+            show: false,
             groupList: [
                 {
                     name: "플랫폼사업팀",
@@ -162,20 +166,30 @@ export default {
             isEditMode: false,
             editBtnText: '수정'
         });
+
+        watch(() => props.show, () => {
+     
+
+            console.log(props)
+            state.show = true
+            // your code
+        }, { deep: true });
+
         const getUserInfo = () => {
             // id로 유저 찾기
             axios.get("/user/:id").then(data => {
                 console.log(data);
             });
         };
+
         const closePop = () => {
             // const userDetailPop = ref("userDetailPop");
+            console.log(props);
+
+
             state.show = false;
+            
             // console.log(userDetailPop)
-        };
-        const openPop = () => {
-            // const userDetailPop = document.getElementById("userDetailPop");
-            state.show = true;
         };
 
         const toggleEditMode = () => {
@@ -184,25 +198,24 @@ export default {
         }
 
         const handleEditBtn = () => {
-            if(state.isEditMode) {
+            if (state.isEditMode) {
                 // 수정 모드일 경우 form submit으로 데이터 서버에 전송
                 return;
             }
-            
-            return;
-            
-        }
 
-      
+            return;
+
+        }
 
         return {
             getUserInfo,
             closePop,
-            openPop,
             toggleEditMode,
             handleEditBtn,
-            state
+            state,
+            props
         };
+
     },
     components: { MaterialAvatar, MaterialInput, MaterialSwitch, MaterialButton, InvoiceCard, PaymentCard }
 };

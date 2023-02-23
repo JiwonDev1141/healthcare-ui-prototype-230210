@@ -3,11 +3,8 @@
     <div class="container top-0 position-sticky z-index-sticky">
       <div class="row">
         <div class="col-12">
-          <navbar
-            isBlur="blur my-3 py-2 mt-4 start-0 end-0 mx-4 shadow blur border-radius-lg"
-            btnBackground="bg-gradient-success"
-            v-bind:darkMode="true"
-          />
+          <navbar isBlur="blur my-3 py-2 mt-4 start-0 end-0 mx-4 shadow blur border-radius-lg"
+            btnBackground="bg-gradient-success" v-bind:darkMode="true" />
         </div>
       </div>
     </div>
@@ -17,21 +14,16 @@
           <div class="container">
             <div class="row">
               <div
-                class="col-6 d-lg-flex d-none h-100 my-auto pe-0 ps-0 position-absolute top-0 start-0 text-center justify-content-center flex-column"
-              >
-                <div
-                  class="position-relative h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center"
+                class="col-6 d-lg-flex d-none h-100 my-auto pe-0 ps-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">
+                <div class="position-relative h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center"
                   :style="{
                     backgroundImage:
                       'url(' +
                       require('@/assets/img/illustrations/illustration-signin.jpg') +
                       ')',
-                  }"
-                ></div>
+                  }"></div>
               </div>
-              <div
-                class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5"
-              >
+              <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
                 <div class="card card-plain">
                   <div class="pb-0 card-header bg-transparent mb-4">
                     <h4 class="font-weight-bolder">회원가입</h4>
@@ -40,67 +32,37 @@
                     </p>
                   </div>
                   <div class="card-body">
-                    <form role="form">
+
+                    <form @submit.prevent="submitSignUp" role="form">
                       <div class="mb-3">
-                        <material-input
-                          id="name"
-                          type="text"
-                          label="Name"
-                          name="name"
-                          size="lg"
-                        />
+                        <material-input id="name" type="text" label="Name" name="username" size="lg" />
                       </div>
                       <div class="mb-3">
-                        <material-input
-                          id="email"
-                          type="email"
-                          label="Email"
-                          name="email"
-                          size="lg"
-                        />
+                        <material-input id="email" type="email" label="Email" name="email" size="lg" />
                       </div>
                       <div class="mb-3">
-                        <material-input
-                          id="password"
-                          type="password"
-                          label="Password"
-                          name="password"
-                          size="lg"
-                        />
+                        <material-input id="password" type="password" label="Password" name="password" size="lg" />
                       </div>
-                      <material-checkbox
-                        id="flexCheckDefault"
-                        class="font-weight-light"
-                        checked
-                      >
-                      
-                        <a
-                          href="../../../pages/privacy.html"
-                          class="text-dark font-weight-bolder"
-                          >이용 약관</a
-                        >
+                      <div class="mb-3">
+                        <material-input id="password2" type="password" label="Verify Password" name="password2"
+                          size="lg" />
+                      </div>
+                      <material-checkbox id="flexCheckDefault" class="font-weight-light" checked>
+
+                        <a href="../../../pages/privacy.html" class="text-dark font-weight-bolder">이용 약관</a>
                         에 동의합니다
                       </material-checkbox>
                       <div class="text-center">
-                        <material-button
-                          class="mt-4"
-                          variant="gradient"
-                          color="success"
-                          fullWidth
-                          size="lg"
-                          >회원가입</material-button
-                        >
+                        <material-button class="mt-4" variant="gradient" color="success" fullWidth
+                          size="lg">회원가입</material-button>
                       </div>
                     </form>
                   </div>
                   <div class="px-1 pt-0 text-center card-footer px-lg-2">
                     <p class="mx-auto mb-4 text-sm">
                       계정이 있으신가요?
-                      <router-link
-                        :to="{ name: 'SignIn' }"
-                        class="text-success text-gradient font-weight-bold"
-                        >로그인</router-link
-                      >
+                      <router-link :to="{ name: 'SignIn' }"
+                        class="text-success text-gradient font-weight-bold">로그인</router-link>
                     </p>
                   </div>
                 </div>
@@ -120,6 +82,7 @@ import MaterialCheckbox from "@/components/MaterialCheckbox.vue";
 import MaterialButton from "@/components/MaterialButton.vue";
 const body = document.getElementsByTagName("body")[0];
 import { mapMutations } from "vuex";
+import { postSignUp } from "../api";
 
 export default {
   name: "sign-up",
@@ -141,6 +104,32 @@ export default {
   },
   methods: {
     ...mapMutations(["toggleEveryDisplay", "toggleHideConfig"]),
+
+    submitSignUp: (e) => {
+
+      postSignUp({
+
+        email: e.target['email'].value,
+        password: e.target['password'].value,
+        password2: e.target['password2'].value,
+        username: e.target['username'].value
+
+      }).then(data => {
+
+        console.log(data);
+
+        if (data.data.status === 200) {
+          alert(data.data.msg)
+        }
+        else {
+          alert(data.data.error)
+        }
+
+      }).catch(err => {
+        console.log(err);
+      })
+    }
+    
   },
 };
 </script>
