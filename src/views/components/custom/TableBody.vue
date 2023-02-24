@@ -226,14 +226,11 @@ export default {
         list: Array
     },
     setup(props) {
-
   
         const document = ref(window.document);
         const state = reactive({
 
         });
-
-        
 
         watch(() => props.show, () => {
 
@@ -244,8 +241,6 @@ export default {
             const doc = parser.parseFromString(string, 'text/html');
             return doc
         }
-
-
 
         return {
             document,
