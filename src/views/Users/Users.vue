@@ -36,7 +36,7 @@
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
-                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg"
+                          <img src="../../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg"
                             alt="user1" />
                         </div>
                         <div class="d-flex flex-column justify-content-center">
@@ -70,7 +70,7 @@
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
-                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg"
+                          <img src="../../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg"
                             alt="user1" />
                         </div>
                         <div class="d-flex flex-column justify-content-center">
@@ -104,7 +104,7 @@
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
-                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg"
+                          <img src="../../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg"
                             alt="user1" />
                         </div>
                         <div class="d-flex flex-column justify-content-center">
@@ -138,7 +138,7 @@
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
-                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg"
+                          <img src="../../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg"
                             alt="user1" />
                         </div>
                         <div class="d-flex flex-column justify-content-center">
@@ -198,7 +198,7 @@
 // import TransactionCard from "./components/TransactionCard.vue";
 
 import { reactive } from 'vue';
-import UserDetailPop from './components/custom/UserDetailPop.vue';
+import UserDetailPop from '../components/custom/UserDetailPop.vue';
 import { ref } from 'vue';
 
 // 아이디

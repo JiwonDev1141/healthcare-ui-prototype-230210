@@ -13,6 +13,7 @@
           
           <material-button color="dark" variant="gradient" size="sm">
             <!-- <i class="fas fa-plus me-0"></i> -->
+            
             {{ buttonText }}
           </material-button>
         </div>
@@ -36,7 +37,7 @@
           <div class="d-flex align-items-center text-sm">
             
             <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4 " style="width: 50px;">
-              <i class="fas fa-file-pdf text-lg me-1" aria-hidden="true"></i>
+              <i class="fas fa-trash-alt"></i>
               제거
             </button>
           </div>

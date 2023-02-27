@@ -1,6 +1,6 @@
 <template>
     <div v-show="state.show" ref="userDetailPop" id="userDetailPop"
-        style="width: 400px;  overflow-x: hidden; z-index: 0; background-color: rgba(255, 255, 255, 1); box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 10px; border: solid 0px;  padding: 15px;">
+        style="width: 400px; height:80vh; overflow-x: hidden; z-index: 0; background-color: rgba(255, 255, 255, 1); box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 10px; border: solid 0px;  padding: 15px;">
         <div style="margin-bottom: 15px;">
             <button @click="closePop" class="p-0 btn btn-link text-dark fixed-plugin-close-button"
                 style="position: absolute; right: 20px;"><i class="material-icons">clear</i></button>
@@ -140,7 +140,7 @@ export default {
 
 
         const state = reactive({
-            show: true,
+            show: false,
             groupList: [
                 {
                     name: "플랫폼사업팀",

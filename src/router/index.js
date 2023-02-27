@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
-import Devices from "../views/Devices.vue";
-import Tenant from "../views/Tenant.vue";
+import Devices from "../views/Devices/Devices.vue";
+import Tenants from "../views/Tenants/Tenants.vue";
 import RTL from "../views/Rtl.vue";
-import Notifications from "../views/Notifications.vue";
+import Notifications from "../views/Events/Events.vue";
 import Profile from "../views/Profile.vue";
 import SignIn from "../views/SignIn.vue";
 import SignUp from "../views/SignUp.vue";
-import Users from "../views/Users.vue";
-import Setting from "../views/Setting.vue";
+import Users from "../views/Users/Users.vue";
+import Setting from "../views/Setting/Setting.vue";
 
 const routes = [
   {
@@ -29,7 +29,7 @@ const routes = [
   {
     path: "/billing",
     name: "테넌트 관리",
-    component: Tenant,
+    component: Tenants,
   },
   {
     path: "/rtl-page",

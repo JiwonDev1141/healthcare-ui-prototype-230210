@@ -7,7 +7,7 @@
             <div
               class="bg-gradient-success shadow-success border-radius-lg pt-4 pb-3"
             >
-              <h6 class="text-white text-capitalize ps-3">테넌트 목록</h6>
+              <h6 class="text-white text-capitalize ps-3">디바이스 목록</h6>
             </div>
           </div>
           <div class="card-body px-0 pb-2">
@@ -18,68 +18,147 @@
                     <th
                       class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
                     >
-                      기기ID
+                      식별번호
                     </th>
                     <th
                       class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"
                     >
-                      기기 전화번호
+                      전화번호
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      유형
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      기업ID
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      기업 코드
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      기업명
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      서비스 코드
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      서비스명
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      사용자 ID
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      사용자 이름
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      생성일
+                    </th>
+                    <th
+                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      수정일
                     </th>
                     <th
                       class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
                     >
                       상태
                     </th>
-                    <th
-                      class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
-                    >
-                      등록일
-                    </th>
                     <th class="text-secondary opacity-7"></th>
                   </tr>
                 </thead>
                 <tbody>
+                  
                   <tr>
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
                           <img
-                            src="../assets/img/team-2.jpg"
+                            src="../../assets/img/team-2.jpg"
                             class="avatar avatar-sm me-3 border-radius-lg"
                             alt="user1"
                           />
                         </div>
                         <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">2b9ca54e2db89315</h6>
-                          <p class="text-xs text-secondary mb-0">
+                          <h6 class="mb-0 text-sm">c3163f072f50745a</h6>
+                          <!-- <p class="text-xs text-secondary mb-0">
                             john@creative-tim.com
-                          </p>
+                          </p> -->
                         </div>
                       </div>
                     </td>
                     <td>
-                      <p class="text-xs font-weight-bold mb-0">010-2180-1691</p>
-                      <p class="text-xs text-secondary mb-0">Organization</p>
+                      <p class="text-xs font-weight-bold mb-0">010-1111-8765</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
                     </td>
                     <td class="align-middle text-center text-sm">
                       <span class="badge badge-sm bg-gradient-success"
-                        >Online</span
+                        >Watch</span
                       >
                     </td>
                     <td class="align-middle text-center">
                       <span class="text-secondary text-xs font-weight-bold"
-                        >2022-10-05 11:58:46</span
+                        ></span
                       >
                     </td>
                     <td class="align-middle">
-                      <a
-                        href="javascript:;"
+                      <span
+                     
                         class="text-secondary font-weight-bold text-xs"
                         data-toggle="tooltip"
                         data-original-title="Edit user"
                       >
-                        Edit
-                      </a>
+                      CO-00001
+                    </span>
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">HDM Tech, RW</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td class="align-middle">
+                      <p class="text-xs font-weight-bold mb-0">JD</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">제주 해녀 건강</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">010-1111-8765</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">홍길동</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">2022-02-19</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">2/19/2022</p>
+                      <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                      <span class="badge badge-sm bg-gradient-success"
+                        >사용중</span
+                      >
                     </td>
                   </tr>
                   <tr>
@@ -87,13 +166,13 @@
                       <div class="d-flex px-2 py-1">
                         <div>
                           <img
-                            src="../assets/img/team-3.jpg"
+                            src="../../assets/img/team-3.jpg"
                             class="avatar avatar-sm me-3 border-radius-lg"
                             alt="user2"
                           />
                         </div>
                         <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Alexa Liras</h6>
+                          <h6 class="mb-0 text-sm"></h6>
                           <p class="text-xs text-secondary mb-0">
                             alexa@creative-tim.com
                           </p>
@@ -125,7 +204,7 @@
                       </a>
                     </td>
                   </tr>
-                  <tr>
+                  <!-- <tr>
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
@@ -296,7 +375,7 @@
                         Edit
                       </a>
                     </td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
             </div>
@@ -670,24 +749,7 @@
 </template>
 
 <script>
-// import NavPill from "./components/NavPill.vue";
-// import MasterCard from "@/examples/Cards/MasterCard.vue";
-// import DefaultInfoCard from "@/examples/Cards/DefaultInfoCard.vue";
-// import PaymentCard from "./components/PaymentCard.vue";
-// import InvoiceCard from "./components/InvoiceCard.vue";
-// import BillingCard from "./components/BillingCard.vue";
-// import TransactionCard from "./components/TransactionCard.vue";
-
 export default {
-  name: "Billing",
-  components: {
-    // NavPill,
-    // MasterCard,
-    // DefaultInfoCard,
-    // PaymentCard,
-    // InvoiceCard,
-    // BillingCard,
-    // TransactionCard,
-  },
+  name: "tables",
 };
 </script>
